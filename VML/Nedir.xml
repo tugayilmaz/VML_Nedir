@@ -1,0 +1,74 @@
+<Genel> 
+<!-- 
+ VML (Veri Mühürleme ve Zarflama)
+
+
+1.VML Nedir ve Neden Kullanilir?
+
+🔹 VML’nin Amacı ve Önemi
+✅ VML (Veri Mühürleme ve Zarflama), elektronik belgelerin 
+güvenliğini sağlamak için kullanılır.
+✅ UBL-TR formatındaki e-faturalar ve e-belgeler
+imzalanarak ve zarflanarak güvenli hale getirilir.
+✅ Bir e-faturanın hukuki geçerliliği için, GİB tarafından 
+istenen şemalara uygun olması gerekir.
+
+🔹 Neden Zarflama Yapıyoruz?
+ Güvenlik: Belgenin içeriği değiştirilmemiş olmalıdır.
+ Bütünlük: Dosya, gönderildiği gibi korunmalıdır.
+ Kimlik Doğrulama: Kimin gönderdiği belli olmalıdır.
+ Hukuki Geçerlilik: GİB kurallarına uygun olmalıdır.
+
+ Eğer VML yapılmazsa, e-fatura geçersiz sayılabilir ve sistem tarafından reddedilir!
+
+
+
+2. VMLnin 3 Ana Aşamasi
+
+VML süreci 3 ana aşamadan oluşur:
+
+1️⃣ XML Belgesini Hazırlama
+2️⃣ Base64/ZIP ile Zarflama
+3️⃣ Elektronik İmza ve Mühürleme
+
+
+
+
+
+ 1️⃣ VML’nin Tanımı ve Önemi
+🔹 VML (Veri Mühürleme ve Zarflama), e-fatura ve diğer e-belgelerin güvenli şekilde saklanmasını ve iletilmesini sağlayan bir süreçtir.
+🔹 GİB (Gelir İdaresi Başkanlığı) ve uluslararası e-belge sistemleri, bu süreci zorunlu tutar.
+🔹 Eğer e-fatura veya e-arşiv gibi belgeler VML’den geçmezse, geçersiz sayılabilir.
+
+📌 VML'nin Amacı:
+✅ Veri Bütünlüğü: Dosyanın değişmediğini kanıtlar.
+✅ Gizlilik: Yetkisiz erişime karşı koruma sağlar.
+✅ Kimlik Doğrulama: Göndericinin gerçekten kim olduğunu garanti eder.
+✅ Hukuki Geçerlilik: GİB ve e-belge sistemleri için zorunludur.
+
+📍 2️⃣ VML Sürecindeki Ana Adımlar
+VML süreci 3 ana adımdan oluşur:
+
+Adım	Açıklama
+1. XML Dosyasını Hazırla	E-fatura veya e-belge formatında bir XML oluştur.
+2. Base64 veya ZIP ile Zarflama	XML’i Base64 formatına çevirerek veya ZIP ile sıkıştırarak güvenli hale getir.
+3. Elektronik İmza ile İmzalama	XML dosyasına dijital imza ekleyerek doğruluğunu ve güvenliğini sağla.
+Sen şu an 1. ve 2. adımları tamamladın! 🚀
+
+Şimdi son adım olan "Elektronik İmza ile İmzalama" işlemine geçmemiz gerekiyor.
+
+📍 3️⃣ XML Dosyanı Elektronik İmza ile İmzalama (Son Adım)
+Bu adım, VML sürecinin en önemli adımıdır!
+💡 Elektronik imza işlemi olmadan, GİB sistemleri faturayı kabul etmez.
+
+İmza süreci şu şekilde işler:
+1️⃣ Özel anahtar (Private Key) ile XML dosyanı şifrele.
+2️⃣ Sertifika (X.509) kullanarak kimlik doğrulama yap.
+3️⃣ İmzalanmış XML dosyanı doğrula.
+
+📌 Bu işlemi yapmak için "XAdES-BES" formatında XML imzalama yapacağız.
+
+
+-->
+
+</Genel> 
